@@ -1,0 +1,46 @@
+How to Set up Chatbot into your Computer
+
+Software Requirement
+    Python version 3.10
+    MySQL Server
+
+    Pakages
+    NLTK --- Pip install nltk
+    Tensorflow --- pip install tensorflow
+    numpy --- pip install numpy
+    pickle --- pip install pickle
+    random --- pip install random
+
+Database Set Up
+    create database named "chatbot"
+    Set your database Credentials in settings.py File line 77 and below(/ChatBot/chatbot/settings.py)
+
+    Open terminal window in root directory(/ChatBot)
+    Run following command to execute migrations
+
+    Python manage.py migrate
+
+User Privileges
+    You can use "Data Entry" Section to enter some data to Chatbot Database
+    Login Credentials
+    UserName: admin
+    Password: Admin@123
+
+    You can change admin password to use below command
+
+    python manage.py createsuperuser
+
+Run Server
+    python manage.py runserver
+
+
+
+have a fun!!!
+Dummy SQL file attach with here (name=chatbot.sql). You can use it for quick data entry by importing it into database.
+
+
+
+
+
+
+

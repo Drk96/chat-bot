@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container ">
+        <div class="row m-2" id="header">
+            <h1 class="text-primary text-center"><strong> Welcome to ChatBot App</strong></h1>
+        </div>
+        <div class="row p-2" style="border: lightblue solid 4px; border-radius: 10px">
+            <button id="training" class="btn btn-success text-center m-1">Training Bot</button>
+            <a href="admin/" class="btn btn-default text-center m-1">Data Entry</a>
+
+        </div>
+
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible bg-primary">
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            </button>
+
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h3 id="chat-timestamp">You are Warmly Welcome</h3>
+                                <p id="botStarterMessage" class="botText"><span>My name is Trendie.</span></p>
+                                <p id="botStarterMessage" class="botText"><span>I am a demo BOT built to help enhance your
+                                    shopping experience.</span></p>
+                                <p id="botStarterMessage" class="botText"><span>Hi, How can I help you. 😊. I can give shopping advice and help you find a perfect t-shirt for your
+                                    favourite jeans style, help you buy t-shirts and reply to customer support questions</span>
+                                </p>
+                                <p id="botStarterMessage" class="botText"><span>Select one option: <br> <br> <b>Shopping Advice</b>
+                                    <br> <b>See Category List</b> <br> <b>Customer Support</b> </span></p>
+                            </div>
+
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                           placeholder="Message">
+                                    <p></p>
+                                </div>
+
+                                <div class="chat-bar-icons">
+                                    <i style="color: crimson;" class="fa fa-fw fa-heart"
+                                       onclick="heartButton()"></i>
+                                    <i style="color: #333;" class="fa fa-fw fa-send"
+                                       onclick="sendButton()"></i>
+                                </div>
+                            </div>
+
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    {% csrf_token %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block script %}
+    <script>
+        $("#training").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "chatbot/training/",
+                beforeSend: function () {
+                    Swal.fire({
+                        title: 'Processing',
+                        text: "Please Wait...",
+                        didOpen: () => {
+                            Swal.showLoading()
+                        },
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        allowEnterKey: false
+                    })
+                },
+                success: function (result) {
+                    Swal.fire(
+                        "",
+                        "Trained ChatBot Successfully",
+                        "info"
+                    )
+                },
+                error: function (result) {
+                    alert('error');
+                }
+            });
+        })
+    </script>
+
+{% endblock %}
+
+

@@ -1,0 +1,27 @@
+# Log files
+*.log
+
+# JetBrains IDE
+.idea/
+.idea
+.idea/*
+
+
+# Applications
+*.exe
+*.war
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+.vscode/*
+.phpintel/*
+*.php20*
+*.7z
+*.zip
+*.rar

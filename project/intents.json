@@ -1,0 +1,80 @@
+{
+  "intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "Is anyone there?","Hey", "Hola", "Hello", "Good day", "Hi", "ho", "Hi Trendie"],
+     "responses": ["Hello there", "Hi, how can I help", "What's up", "Hola", "Hey dude"]
+    },
+    {"tag": "How_are_you",
+     "patterns": ["How are you?"],
+     "responses": [ "All good here. How are you doing?", "I am doing good. How are you doing?"]
+    },
+    {"tag": "fine",
+     "patterns": ["I am fine", "Party well", "Good", "I am Good", "doing grate"],
+     "responses": [ "My pleasure. Happy to hear that"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Ok bye", "Bye Bye", "tata"],
+     "responses": ["See you!", "Have a nice day", "Sure Bye", "Good Day", "OK Bye", "Bye. Talk to you later"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "you are the best"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome", "Sure mate. Any time"]
+    },
+    {"tag": "heart",
+     "patterns": ["heartemojiininput"],
+     "responses": ["You are So Sweet", "My pleasure", "Love you too. Budy", "My lovely mate. How are you?"]
+    },
+    {"tag": "name",
+    "patterns": ["What is your name", "Whats your name", "Tell me your name", "Who are you", "Tell me about yourself", "You are", "Your name"],
+    "responses": ["I am Trendie.", "Hello!! My name is Trendie.",  "Hello Friend, Trendie is my name"]
+    },
+    {"tag": "chatbot_info",
+    "patterns": ["Tell me about you", "details about you", "what are you doing?", "your service", "what is your task?", "Your duty", "build for what", "Details of you", "what do you do", "tell me about yourself"],
+    "responses": ["I am a demo BOT built to help enhance your shopping experience. <br><br> I can give shopping advice and help you find a perfect t-shirt for your favourite jeans style, help you buy t-shirts and reply to customer support questions. <br><br> Select one option: <br> <b>Shopping Advice</b> <br> <b>See Category List</b> <br> <b>Customer Support</b>"]
+    },
+    {"tag": "menuoption",
+    "patterns": ["menu option", "main menu", "main task list", "task list", "helping options", "options", "I would like to go back to the main menu."],
+    "responses": ["Select one option: <br> <br> <b>Shopping Advice</b> <br> <b>See Category List</b> <br> <b>Customer Support</b>"]
+    },
+    {"tag": "customer_support",
+    "patterns": ["customer support", "give me customer support", "customer support menu", "customer support list", "third option list", "3rd option list", "3 options"],
+    "responses": ["You are in good hands! I can help you with: <br> <b>return/refund policy</b> <br> <b>shipping/tracking terms</b> <br> <b>choice of shoes size</b> <br> Type above keyword question to get answers"]
+    },
+    {"tag": "refund_policy",
+    "patterns": ["What is your return policy", "refund policy", "What is your refund policy", "return", "What is your return", "return/refund policy"],
+    "responses": ["All of our product have a 7 day 100% satisfaction guarantee."]
+    },
+    {"tag": "shipping",
+    "patterns": ["What are the shipping options", "shipping", "tracking terms", "return", "What are the tracking terms", "shipping/tracking terms"],
+    "responses": ["We have UPS, DHL and FedEx shipping methods. Order processing time is 3-5 business days."]
+    },
+    {"tag": "order_processing",
+    "patterns": ["How long is the order processing time?", "order processing time", "processing time"],
+    "responses": ["Order processing time is 3-5 business days."]
+    },
+    {"tag": "weather",
+    "patterns": ["Lovely day, don't you think?", "Did you order this beautiful weather?", "Beautiful day, isn't it?" ],
+    "responses": ["Yes it is!. A perfect day to do some shopping"]
+    },
+    {"tag": "fit_like_a_glove",
+    "patterns": ["This T-shirt will fit like a glove, won't it?", "fit like a glove" ],
+    "responses": ["Yes Indeed!"]
+    },
+    {"tag": "happy_emotions",
+    "patterns": ["I really like this T-shirt!", "I think this T-shirt is perfect for me!", "i like your shirts" ],
+    "responses": ["I am glad you like it", "My pleasure"]
+    },
+    {"tag": "is_human",
+    "patterns": ["Are you human?", "You human or bot" ],
+    "responses": ["I am not a human. I am a cool fun bot"]
+    },
+    {"tag": "how_is_the_day",
+    "patterns": ["how is the day?" , "what about day"],
+    "responses": ["Good. How about you"]
+    },
+    {"tag": "shopping_advice",
+    "patterns": ["Shopping Advice", "Advice Shopping", "Do you have any advice to shopping" , "give me some advice"],
+    "responses": ["This is a good start. Lets find you a T-Shirt that perfectly match your jeans style. Choose one jeans style that you like. <br> <img src='static/img/jeans-style.jpg' width=200 height=150> <br> Please type 1, 2, 3, 4 or 5"]
+    }
+  ]
+}
