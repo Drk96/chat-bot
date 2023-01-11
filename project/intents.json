@@ -64,10 +64,6 @@
     "patterns": ["I really like this T-shirt!", "I think this T-shirt is perfect for me!", "i like your shirts" ],
     "responses": ["I am glad you like it", "My pleasure"]
     },
-    {"tag": "is_human",
-    "patterns": ["Are you human?", "You human or bot" ],
-    "responses": ["I am not a human. I am a cool fun bot"]
-    },
     {"tag": "how_is_the_day",
     "patterns": ["how is the day?" , "what about day"],
     "responses": ["Good. How about you"]
@@ -75,6 +71,10 @@
     {"tag": "shopping_advice",
     "patterns": ["Shopping Advice", "Advice Shopping", "Do you have any advice to shopping" , "give me some advice"],
     "responses": ["This is a good start. Lets find you a T-Shirt that perfectly match your jeans style. Choose one jeans style that you like. <br> <img src='static/img/jeans-style.jpg' width=200 height=150> <br> Please type 1, 2, 3, 4 or 5"]
+    },
+    {"tag": "is_human",
+    "patterns": ["Are you human?", "You human or bot" ],
+    "responses": ["I am not a human. I am a cool fun bot"]
     }
   ]
 }

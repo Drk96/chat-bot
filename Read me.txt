@@ -4,12 +4,16 @@ Software Requirement
     Python version 3.10
     MySQL Server
 
+    install Django
+    pip install Django
+
     Pakages
     NLTK --- Pip install nltk
     Tensorflow --- pip install tensorflow
     numpy --- pip install numpy
     pickle --- pip install pickle
     random --- pip install random
+
 
 Database Set Up
     create database named "chatbot"
